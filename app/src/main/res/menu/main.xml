@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_wake_on_launch"
+        android:checkable="true"
+        android:title="@string/menu_wake_on_launch"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_voice_help"
+        android:title="@string/menu_voice_help"
+        app:showAsAction="never" />
+</menu>

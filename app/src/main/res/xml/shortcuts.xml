@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Declares that WakeActivity can handle the assistant "open app feature" intent.
+         The per-PC dynamic shortcuts (see Shortcuts.kt) bind to this capability. -->
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.wakepc.WakeActivity"
+            android:targetPackage="com.example.wakepc">
+            <parameter
+                android:name="feature"
+                android:key="feature" />
+        </intent>
+    </capability>
+
+    <!-- Static shortcut: wakes the default PC. Reachable by long-pressing the app icon. -->
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutId="wake_default"
+        android:shortcutLongLabel="@string/wake_default_label"
+        android:shortcutShortLabel="@string/wake_default_label">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.wakepc.WakeActivity"
+            android:targetPackage="com.example.wakepc" />
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/wake_default_synonyms" />
+        </capability-binding>
+    </shortcut>
+</shortcuts>

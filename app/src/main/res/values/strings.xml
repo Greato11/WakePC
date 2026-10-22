@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WakePC</string>
+
+    <string name="add_pc">Add PC</string>
+    <string name="edit_pc">Edit PC</string>
+    <string name="save">Save</string>
+    <string name="hint_name">Name (e.g. Desktop)</string>
+    <string name="hint_mac">MAC address (AA:BB:CC:DD:EE:FF)</string>
+    <string name="hint_address">Address (optional)</string>
+    <string name="hint_port">Port</string>
+    <string name="err_name">Enter a name</string>
+    <string name="err_mac">Enter a valid MAC address</string>
+    <string name="err_port">Port must be 1–65535</string>
+    <string name="empty_text">No PCs yet.\nTap + to add one.</string>
+    <string name="fab_add">Add PC</string>
+
+    <string name="sent_to">Wake signal sent to %1$s</string>
+    <string name="send_failed">Couldn\'t send: %1$s</string>
+    <string name="add_first">Add a PC in WakePC first</string>
+
+    <string name="action_edit">Edit</string>
+    <string name="action_default">Set as default</string>
+    <string name="action_delete">Delete</string>
+    <string name="confirm_delete">Delete %1$s?</string>
+    <string name="default_label">Default</string>
+
+    <string name="menu_wake_on_launch">Wake default PC when app opens</string>
+    <string name="menu_voice_help">Voice commands</string>
+    <string name="voice_help_title">Voice commands</string>
+    <string name="voice_help_body">Easiest: turn on \"Wake default PC when app opens\" in this menu, then say \"Hey Google, open WakePC\". The app opens and sends the wake signal.\n\nOn assistants that support App Actions you can also try \"wake Desktop in WakePC\" (use the name you gave your PC).\n\nYou can also long-press the app icon and drag a \"Wake\" shortcut to your home screen, or add the WakePC widget.</string>
+
+    <string name="choose_pc">Choose a PC</string>
+    <string name="widget_desc">One-tap Wake-on-LAN</string>
+    <string name="widget_caption">Wake</string>
+    <string name="widget_not_set">Tap to set up</string>
+
+    <string name="wake_default_label">Wake PC</string>
+    <string name="wake_label">Wake %1$s</string>
+
+    <string-array name="wake_default_synonyms">
+        <item>pc</item>
+        <item>my pc</item>
+        <item>computer</item>
+        <item>my computer</item>
+        <item>wake pc</item>
+        <item>turn on pc</item>
+        <item>turn on my pc</item>
+    </string-array>
+</resources>
